@@ -51,9 +51,9 @@ spec:
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: cfe-nginx.stage.terraformingkubernetes.com
+  commonName: cfe-nginx.tko.stage.terraformingkubernetes.com
   dnsNames:
-  - cfe-nginx.stage.terraformingkubernetes.com
+  - cfe-nginx.tko.stage.terraformingkubernetes.com
 
 ---
 apiVersion: networking.k8s.io/v1
@@ -67,7 +67,7 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-passthrough: "true"
 spec:
   rules:
-   - host: cfe-nginx.stage.terraformingkubernetes.com
+   - host: cfe-nginx.tko.stage.terraformingkubernetes.com
      http:
         paths:
         - path: /
@@ -79,5 +79,5 @@ spec:
                 name: http-port
   tls:
     - hosts:
-      - cfe-nginx.stage.terraformingkubernetes.com
+      - cfe-nginx.tko.stage.terraformingkubernetes.com
       secretName: cnx-stage-tls-secret
