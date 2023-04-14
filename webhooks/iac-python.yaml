@@ -19,7 +19,7 @@ spec:
           imagePullPolicy: Always
           env:
              - name: PORT
-               value: "8000:
+               value: "8000"
              - name: ENV_MESSAGE
                value: "Hello from argo"
           ports:
