@@ -21,7 +21,7 @@ spec:
              - name: PORT
                value: "8000"
              - name: ENV_MESSAGE
-               value: "Hello from argo"
+               value: "Is this anything?"
           ports:
             - name: iac-python-port
               containerPort: 8000
