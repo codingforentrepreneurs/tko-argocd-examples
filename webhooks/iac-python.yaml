@@ -39,7 +39,7 @@ spec:
     - protocol: TCP
       port: 80
       name: http-port
-      targetPort: ac-python-port
+      targetPort: iac-python-port
 
 
 
