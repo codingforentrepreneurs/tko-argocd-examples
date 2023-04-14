@@ -82,7 +82,7 @@ spec:
               name: iac-python-service
               port:
                 name: http-port
-#   tls:
-#     - hosts:
-#       - iac-python.tko.terraformingkubernetes.com
-#       secretName: iac-python-tls
+  tls:
+    - hosts:
+      - iac-python.tko.terraformingkubernetes.com
+      secretName: iac-python-tls
